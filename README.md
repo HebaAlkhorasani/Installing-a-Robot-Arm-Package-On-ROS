@@ -2,7 +2,7 @@
 
 
 Setup the environment and install the package as follows:
-  1.	ROS-Melodic must be installed on an Ubuntu 18.04 virtual machine. 
+  1.	ROS-Melodic must be installed on an Ubuntu 18.04 virtual machine following this link: https://wiki.ros.org/melodic/Installation/Ubuntu 
   2.	Run the virtual machine terminal.
   3.	Create a workspace named catkin_ws (or another name, however, make sure to change the name in the next steps too!) following this link: http://wiki.ros.org/catkin/Tutorials/create_a_workspace 
   4.	Clone the robot_arm_package from GitHub inside catkin_ws/src:
