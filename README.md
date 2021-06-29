@@ -30,12 +30,17 @@ Use ROS tools to control and simulate the arm as follows:
   ```
   $ roslaunch robot_arm_pkg check_motors.launch
   ```
-  2.	Launch Gazebo to simulate the motion:
+  2.	You may need to change the permission 
+  ```
+	$ cd catkin/src/arduino_robot_arm/robot_arm_pkg/scripts
+	$ sudo chmod +x joint_states_to_gazebo.py
+  ```
+  3. Launch Gazebo to simulate the motion:
   ```
   $ roslaunch robot_arm_pkg check_motors_gazebo.launch
   $ rosrun robot_arm_pkg joint_states_to_gazebo.py
   ```
-  3.	Launch MoveIt to obtain the trajectories needed to move the robot arm to a specific position:
+  4.	Launch MoveIt to obtain the trajectories needed to move the robot arm to a specific position:
   ```
   $ roslaunch moveit_pkg demo.launch
   ```
